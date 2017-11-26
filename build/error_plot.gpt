@@ -1,0 +1,7 @@
+set yrange [-3:3]
+set ylabel 'cross track error'
+set xlabel 'time step'
+set arrow 1 from 0,0 to 1200,0 nohead
+set output "plot.png"
+set terminal png size 2000,800
+plot "error.csv" with linespoints

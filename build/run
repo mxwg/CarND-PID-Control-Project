@@ -1,0 +1,5 @@
+#!/bin/bash
+make && ./pid $1 $2 $3
+gnuplot error_plot.gpt
+NAME="p_$1_d_$2_i_$3.png"
+mv plot.png $NAME && eog $NAME
