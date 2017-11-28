@@ -39,7 +39,7 @@ int main(int argc, char* argv[]) {
     log.open("error.csv");
     // set the following parameters to zero for tuning!
     double P = 0.1;
-    double I = 0.005;
+    double I = 0.0;
     double D = 1.7;
     if (argc > 1)
     {
